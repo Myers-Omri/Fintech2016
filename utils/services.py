@@ -6,6 +6,7 @@ class Services(object):
     #  need to find out from their website
 #setupFee is missing
 #contract length
+#countries deployed in
 
     leap = { 'serviceID': 1,
              'serviceName': 'leap',
@@ -216,5 +217,114 @@ class Services(object):
              'vmNQFix': 0.30,
              'axpPercent': 2.9,
              'axpFix': 0.30,
+             'diners': None
+            }
+
+
+
+    googleWallet = { 'serviceID': 9,
+             'serviceName': 'googleWallet',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 10,
+             'internationalRate': 0.0,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.3,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.3,
+             'axpPercent': 2.9,
+             'axpFix': 0.3,
+             'diners': None
+            }
+
+
+    twoCheckOut = { 'serviceID': 10,
+             'serviceName': 'twoCheckOut',
+             'monthlyFee': 0,
+             'onePercent': 5.5,
+             'oneFix': 0.45,
+             'twoPercent': 5.5,
+             'twoFix': 0.45,
+             'threePercent': 5.5,
+             'threeFix': 0.45,
+             'fourPercent': None,
+             'fourFix': None,
+             'fivePercent': None,
+             'fiveFix': None,
+             'chargebackFee': 16,
+             'internationalRate': 2.5,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 5.5,
+             'vmQFix': 0.45,
+             'vmNQPercent': 5.5,
+             'vmNQFix': 0.45,
+             'axpPercent': None,
+             'axpFix': None,
+             'diners': None
+            }
+
+
+    stripe = { 'serviceID': 11,
+             'serviceName': 'stripe',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 35,
+             'internationalRate': 2.5,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': None,
+             'vmQFix': None,
+             'vmNQPercent': None,
+             'vmNQFix': None,
+             'axpPercent': None,
+             'axpFix': None,
+             'diners': None
+            }
+
+
+    wePay = { 'serviceID': 12,
+             'serviceName': 'wePay',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 35,
+             'internationalRate': None,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.30,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.30,
+             'axpPercent': 2.9,
+             'axpFix': 0.3,
              'diners': None
             }
