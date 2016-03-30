@@ -5,6 +5,7 @@ class Services(object):
 # None is for non existing values
     #  need to find out from their website
 #setupFee is missing
+#contract length
 
     leap = { 'serviceID': 1,
              'serviceName': 'leap',
@@ -34,7 +35,7 @@ class Services(object):
 
     intuit = { 'serviceID': 2,
              'serviceName': 'intuit',
-             'monthlyFee': 0,
+             'monthlyFee': 0.0,
              'onePercent': 1.75,
              'oneFix': 0.5,
              'twoPercent': 1.75,
@@ -84,7 +85,7 @@ class Services(object):
              'diners': None
             }
 
-    paypal = { 'serviceID': 4,
+    payPal = { 'serviceID': 4,
              'serviceName': 'paypal',
              'monthlyFee': 0,
              'onePercent': 2.9,
@@ -98,7 +99,7 @@ class Services(object):
              'fivePercent': 1.9,
              'fiveFix': 0.3,
              'chargebackFee': 20,
-             'internationalRate': 0,
+             'internationalRate': 0.0,
              'isSupportMobile': True,
              'currency': 'usd',
              'vmQPercent': 2.9,
@@ -111,3 +112,109 @@ class Services(object):
             }
 
 
+    skrill = { 'serviceID': 5,
+             'serviceName': 'skrill',
+             'monthlyFee': None,
+             'onePercent': 2.9,
+             'oneFix': 0.29,
+             'twoPercent': 2.9,
+             'twoFix': 0.29,
+             'threePercent': 2.4,
+             'threeFix': 0.29,
+             'fourPercent': 2.00,
+             'fourFix': 0.29,
+             'fivePercent': 1.7,
+             'fiveFix': 0.29,
+             'chargebackFee': 20,
+             'internationalRate': 0.0,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.29,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.29,
+             'axpPercent': 2.9,
+             'axpFix': 0.29,
+             'diners': None
+            }
+
+
+    square = { 'serviceID': 6,
+             'serviceName': 'square',
+             'monthlyFee': 275,
+             'onePercent': 2.75,
+             'oneFix': None,
+             'twoPercent': 2.75,
+             'twoFix': None,
+             'threePercent': None,
+             'threeFix': None,
+             'fourPercent': None,
+             'fourFix': None,
+             'fivePercent': None,
+             'fiveFix': None,
+             'chargebackFee': 0.0,
+             'internationalRate': None,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.75,
+             'vmQFix': 0.0,
+             'vmNQPercent': 2.75,
+             'vmNQFix': 0.0,
+             'axpPercent': None,
+             'axpFix': None,
+             'diners': None
+            }
+
+
+    brainTree = { 'serviceID': 7,
+             'serviceName': 'brainTree',
+             'monthlyFee': 0.0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 15,
+             'internationalRate':0.0,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.3,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.3,
+             'axpPercent': 0.0,
+             'axpFix': 0.0,
+             'diners': None
+            }
+
+
+    amazonPayments = { 'serviceID': 8,
+             'serviceName': 'amazonPayments',
+             'monthlyFee': 0.0,
+             'onePercent': 5.0,
+             'oneFix': 0.0,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.5,
+             'threeFix': 0.3,
+             'fourPercent': 2.2,
+             'fourFix': 0.3,
+             'fivePercent': 1.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 10,
+             'internationalRate': 2.5,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.30,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.30,
+             'axpPercent': 2.9,
+             'axpFix': 0.30,
+             'diners': None
+            }
