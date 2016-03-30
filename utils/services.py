@@ -1,0 +1,113 @@
+class Services(object):
+
+    servicesList = []
+# isSupportMobile is just True
+# None is for non existing values
+    #  need to find out from their website
+#setupFee is missing
+
+    leap = { 'serviceID': 1,
+             'serviceName': 'leap',
+             'monthlyFee': 15,
+             'onePercent': 0.95,
+             'oneFix': 0.1,
+             'twoPercent': 0.95,
+             'twoFix': 0.1,
+             'threePercent': 0.95,
+             'threeFix': 0.1,
+             'fourPercent': 0.95,
+             'fourFix': 0.1,
+             'fivePercent': 0.95,
+             'fiveFix': 0.1,
+             'chargebackFee': 15,
+             'internationalRate': 0.95,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 0.95,
+             'vmQFix': 0.1,
+             'vmNQPercent': 0.95,
+             'vmNQFix': 0.1,
+             'axpPercent': 2.89,
+             'axpFix': 0.1,
+             'diners': None
+            }
+
+    intuit = { 'serviceID': 2,
+             'serviceName': 'intuit',
+             'monthlyFee': 0,
+             'onePercent': 1.75,
+             'oneFix': 0.5,
+             'twoPercent': 1.75,
+             'twoFix': 0.5,
+             'threePercent': 1.75,
+             'threeFix': 0.5,
+             'fourPercent': None,
+             'fourFix': None,
+             'fivePercent': None,
+             'fiveFix': None,
+             'chargebackFee': 20,
+             'internationalRate': None,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 1.75,
+             'vmQFix': 0.5,
+             'vmNQPercent': 1.75,
+             'vmNQFix': 0.5,
+             'axpPercent': 2.89,
+             'axpFix': 0.0,
+             'diners': None
+            }
+
+    payza = { 'serviceID': 3,
+             'serviceName': 'payza',
+             'monthlyFee': None,
+             'onePercent': None,
+             'oneFix': None,
+             'twoPercent': None,
+             'twoFix': None,
+             'threePercent': None,
+             'threeFix': None,
+             'fourPercent': None,
+             'fourFix': None,
+             'fivePercent': None,
+             'fiveFix': None,
+             'chargebackFee': 35,
+             'internationalRate': 2.5,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.5,
+             'vmQFix': 0.25,
+             'vmNQPercent': None,
+             'vmNQFix': None,
+             'axpPercent': None,
+             'axpFix': None,
+             'diners': None
+            }
+
+    paypal = { 'serviceID': 4,
+             'serviceName': 'paypal',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.5,
+             'threeFix': 0.3,
+             'fourPercent': 2.2,
+             'fourFix': 0.3,
+             'fivePercent': 1.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 20,
+             'internationalRate': 0,
+             'isSupportMobile': True,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.3,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.3,
+             'axpPercent': 2.9,
+             'axpFix': 0.3,
+             'diners': None
+            }
+
+
