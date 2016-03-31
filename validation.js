@@ -34,7 +34,375 @@ function formValidation()
         "customer": 'RingelXPS13'
     };
 
-    return userJsonData;
+    findBestCompany(userJsonData);
+}
+
+function findBestCompany(userJsonData){
+
+    var allCompanyData = initMappingData();
+
+    var companyPrice = {
+            'leap': 0,
+            'intuit': 0,
+            'payza': 0,
+            'payPal': 0,
+            'skrill': 0,
+            'square': 0,
+            'brainTree': 0,
+            'amazonPayments': 0,
+            'googleWallet': 0,
+            'twoCheckOut': 0,
+            'stripe': 0,
+            'wePay' : 0
+    };
+    var curPurchase = userJsonData.productPrice;
+
+    for (var idx in companyPrice){
+        var offerPrice = 0;
+        var curCompany = idx;
+
+
+    }
+
+
+}
+
+function initMappingData() {
+    var leap = { 'serviceID': 1,
+             'serviceName': 'leap',
+             'monthlyFee': 15,
+             'onePercent': 0.95,
+             'oneFix': 0.1,
+             'twoPercent': 0.95,
+             'twoFix': 0.1,
+             'threePercent': 0.95,
+             'threeFix': 0.1,
+             'fourPercent': 0.95,
+             'fourFix': 0.1,
+             'fivePercent': 0.95,
+             'fiveFix': 0.1,
+             'chargebackFee': 15,
+             'internationalRate': 0.95,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 0.95,
+             'vmQFix': 0.1,
+             'vmNQPercent': 0.95,
+             'vmNQFix': 0.1,
+             'axpPercent': 2.89,
+             'axpFix': 0.1,
+             'diners': null
+            };
+
+    var intuit = { 'serviceID': 2,
+             'serviceName': 'intuit',
+             'monthlyFee': 0.0,
+             'onePercent': 1.75,
+             'oneFix': 0.5,
+             'twoPercent': 1.75,
+             'twoFix': 0.5,
+             'threePercent': 1.75,
+             'threeFix': 0.5,
+             'fourPercent': null,
+             'fourFix': null,
+             'fivePercent': null,
+             'fiveFix': null,
+             'chargebackFee': 20,
+             'internationalRate': null,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 1.75,
+             'vmQFix': 0.5,
+             'vmNQPercent': 1.75,
+             'vmNQFix': 0.5,
+             'axpPercent': 2.89,
+             'axpFix': 0.0,
+             'diners': null
+            }
+
+    var payza = { 'serviceID': 3,
+             'serviceName': 'payza',
+             'monthlyFee': null,
+             'onePercent': null,
+             'oneFix': null,
+             'twoPercent': null,
+             'twoFix': null,
+             'threePercent': null,
+             'threeFix': null,
+             'fourPercent': null,
+             'fourFix': null,
+             'fivePercent': null,
+             'fiveFix': null,
+             'chargebackFee': 35,
+             'internationalRate': 2.5,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.5,
+             'vmQFix': 0.25,
+             'vmNQPercent': null,
+             'vmNQFix': null,
+             'axpPercent': null,
+             'axpFix': null,
+             'diners': null
+            };
+
+    var payPal = { 'serviceID': 4,
+             'serviceName': 'paypal',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.5,
+             'threeFix': 0.3,
+             'fourPercent': 2.2,
+             'fourFix': 0.3,
+             'fivePercent': 1.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 20,
+             'internationalRate': 0.0,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.3,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.3,
+             'axpPercent': 2.9,
+             'axpFix': 0.3,
+             'diners': null
+            };
+
+    var skrill = { 'serviceID': 5,
+             'serviceName': 'skrill',
+             'monthlyFee': null,
+             'onePercent': 2.9,
+             'oneFix': 0.29,
+             'twoPercent': 2.9,
+             'twoFix': 0.29,
+             'threePercent': 2.4,
+             'threeFix': 0.29,
+             'fourPercent': 2.00,
+             'fourFix': 0.29,
+             'fivePercent': 1.7,
+             'fiveFix': 0.29,
+             'chargebackFee': 20,
+             'internationalRate': 0.0,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.29,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.29,
+             'axpPercent': 2.9,
+             'axpFix': 0.29,
+             'diners': null
+            };
+
+    var square = { 'serviceID': 6,
+             'serviceName': 'square',
+             'monthlyFee': 275,
+             'onePercent': 2.75,
+             'oneFix': null,
+             'twoPercent': 2.75,
+             'twoFix': null,
+             'threePercent': null,
+             'threeFix': null,
+             'fourPercent': null,
+             'fourFix': null,
+             'fivePercent': null,
+             'fiveFix': null,
+             'chargebackFee': 0.0,
+             'internationalRate': null,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.75,
+             'vmQFix': 0.0,
+             'vmNQPercent': 2.75,
+             'vmNQFix': 0.0,
+             'axpPercent': null,
+             'axpFix': null,
+             'diners': null
+            };
+
+    var brainTree = { 'serviceID': 7,
+             'serviceName': 'brainTree',
+             'monthlyFee': 0.0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 15,
+             'internationalRate':0.0,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.3,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.3,
+             'axpPercent': 0.0,
+             'axpFix': 0.0,
+             'diners': null
+            };
+
+    var amazonPayments = { 'serviceID': 8,
+             'serviceName': 'amazonPayments',
+             'monthlyFee': 0.0,
+             'onePercent': 5.0,
+             'oneFix': 0.0,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.5,
+             'threeFix': 0.3,
+             'fourPercent': 2.2,
+             'fourFix': 0.3,
+             'fivePercent': 1.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 10,
+             'internationalRate': 2.5,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.30,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.30,
+             'axpPercent': 2.9,
+             'axpFix': 0.30,
+             'diners': null
+            };
+
+    var googleWallet = { 'serviceID': 9,
+             'serviceName': 'googleWallet',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 10,
+             'internationalRate': 0.0,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.3,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.3,
+             'axpPercent': 2.9,
+             'axpFix': 0.3,
+             'diners': null
+            };
+
+    var twoCheckOut = { 'serviceID': 10,
+             'serviceName': 'twoCheckOut',
+             'monthlyFee': 0,
+             'onePercent': 5.5,
+             'oneFix': 0.45,
+             'twoPercent': 5.5,
+             'twoFix': 0.45,
+             'threePercent': 5.5,
+             'threeFix': 0.45,
+             'fourPercent': null,
+             'fourFix': null,
+             'fivePercent': null,
+             'fiveFix': null,
+             'chargebackFee': 16,
+             'internationalRate': 2.5,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 5.5,
+             'vmQFix': 0.45,
+             'vmNQPercent': 5.5,
+             'vmNQFix': 0.45,
+             'axpPercent': null,
+             'axpFix': null,
+             'diners': null
+            };
+
+    var stripe = { 'serviceID': 11,
+             'serviceName': 'stripe',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 35,
+             'internationalRate': 2.5,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': null,
+             'vmQFix': null,
+             'vmNQPercent': null,
+             'vmNQFix': null,
+             'axpPercent': null,
+             'axpFix': null,
+             'diners': null
+            };
+
+    var wePay = { 'serviceID': 12,
+             'serviceName': 'wePay',
+             'monthlyFee': 0,
+             'onePercent': 2.9,
+             'oneFix': 0.3,
+             'twoPercent': 2.9,
+             'twoFix': 0.3,
+             'threePercent': 2.9,
+             'threeFix': 0.3,
+             'fourPercent': 2.9,
+             'fourFix': 0.3,
+             'fivePercent': 2.9,
+             'fiveFix': 0.3,
+             'chargebackFee': 35,
+             'internationalRate': null,
+             'isSupportMobile': true,
+             'currency': 'usd',
+             'vmQPercent': 2.9,
+             'vmQFix': 0.30,
+             'vmNQPercent': 2.9,
+             'vmNQFix': 0.30,
+             'axpPercent': 2.9,
+             'axpFix': 0.3,
+             'diners': null
+            };
+
+    var allCompanyData = {
+            'leap': leap,
+            'intuit': intuit,
+            'payza': payza,
+            'payPal': payPal,
+            'skrill': skrill,
+            'square': square,
+            'brainTree': brainTree,
+            'amazonPayments': amazonPayments,
+            'googleWallet': googleWallet,
+            'twoCheckOut': twoCheckOut,
+            'stripe': stripe,
+            'wePay' : wePay
+     }
+
+    return allCompanyData;
+}
+
+
+function insertDataDB(resData){
+
+
+  // PHP code
 }
 
 function checkValidCard(value) {
